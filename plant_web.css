@@ -1,0 +1,23 @@
+#navbar {
+  height: 60px;
+}
+
+#plant-logo {
+  height: 100%;
+}
+
+#plant-web-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+#plant-state {
+  width: 100%;
+}
+
+#section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+}

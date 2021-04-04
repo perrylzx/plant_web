@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="plant_web.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+      <img id="plant-logo" src="plant.png" />
+      <button id="auto-button" type="button" class="btn btn-primary">
+        AUTO
+      </button>
+    </nav>
+    <div id="plant-web-body">
+      <div>section1</div>
+      <div id="section-2">
+        <h1 id="auto-status">MANUAL</h1>
+        <img id="plant-state" src="plant_happy.png" />
+        <h2>WET (Last watered: 12hrs ago)</h2>
+        <h2>Water: Full</h2>
+        <div id="on-off-container">
+          <button type="button" class="btn btn-primary">ON</button>
+          <button type="button" class="btn btn-primary">OFF</button>
+        </div>
+      </div>
+      <div>section3</div>
+    </div>
+    <script>
+      const autoButton = document.getElementById("auto-button");
+      const autoStatus = document.getElementById("auto-status");
+      autoButton.addEventListener("click", () => {
+        if (autoButton.innerText === "MANUAL") {
+          autoButton.innerText = "AUTO";
+          autoStatus.innerText = "AUTO";
+        } else {
+          autoButton.innerText = "MANUAL";
+          autoStatus.innerText = "MANUAL";
+        }
+      });
+    </script>
+  </body>
+</html>
